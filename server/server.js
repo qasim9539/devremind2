@@ -11,7 +11,7 @@ const errorMiddleware = require('./middlewares/error-middleware');
 const cors = require('cors');
 
 const corsOptions = {
-    origin: '',
+    origin: 'https://devremind2.vercel.app',
     methods: 'GET, HEAD, PUT, PATCH, POST, DELETE',
     credentials: true,
 };
