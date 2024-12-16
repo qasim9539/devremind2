@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
     const [isloading, setIsLoading] = useState(true);
     const [services, setServices] = useState([]);
     const authorizationToken = `Bearer ${token}`;
-    const API = window.location.origin;
+    const API = https://devremind2.vercel.app;
 
     const storetokenInLS = (serverToken) => {
         setToken(serverToken);
