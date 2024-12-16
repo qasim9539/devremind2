@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
     const [isloading, setIsLoading] = useState(true);
     const [services, setServices] = useState([]);
     const authorizationToken = `Bearer ${token}`;
-    const API = window.location.origin;
+    const API = import.meta.env.VITE_API;
 
     const storetokenInLS = (serverToken) => {
         setToken(serverToken);
